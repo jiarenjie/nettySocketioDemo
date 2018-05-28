@@ -1,0 +1,19 @@
+<html>
+	
+</html>
+<script type="text/javascript" src="socket.io.js"></script>
+<script>
+    var socket = io.connect('http://localhost:8081');
+    socket.on('dataPush',function(data) {
+        alert(data)
+    });
+	socket.on('jingqing',function(data) {
+        alert(data)
+    });
+	socket.on('renxiang',function(data) {
+        alert(data)
+    });
+	socket.on('jingli',function(data) {
+        alert(data.data);
+    });
+</script>
